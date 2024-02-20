@@ -1,0 +1,54 @@
+/**
+ * Program purpose: To define flower class
+ *Programmer: Iqbal
+ *Date 20 february 2024
+ * 
+ */ 
+
+public class Flower {
+    private String name;
+    private String color;
+    private double price;
+    private int quantity;
+
+    // Constructors
+public Flower(String name, String color, double price, int quantity) {
+this.name = name;
+this.color = color;
+this.price = price;
+this.quantity = quantity;
+}
+
+// Accessor methods
+public String getName() {
+return name;
+}
+
+public String getColor() {
+return color;
+}
+
+public double getPrice() {
+return price;
+}
+
+public int getQuantity() {
+return quantity;
+}
+
+// Mutator methods
+public void setPrice(double price) {
+this.price = price;
+}
+
+public void setQuantity(int quantity) {
+this.quantity = quantity;
+}
+
+// toString method
+@Override
+public String toString() {
+return "Flower: " + name + ", Color: " + color + ", Price: $" + price + ", Quantity: " + quantity;
+}
+
+}
